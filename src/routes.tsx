@@ -7,12 +7,12 @@ export const history = browserHistory
 
 import Root from './pages/root'
 import ExamplePage from './pages/example-page'
+import ComponentPage from './pages/component-page'
 
 export const routes = (
 	<Router history={browserHistory}>
 		<Route path='/' component={Root}>
-			<Route path='/' component={ExamplePage} />
-			<Route path='/:test' component={ExamplePage} />
+			<Route path='/' component={ComponentPage} />
 		</Route>
 	</Router>
 )

@@ -1,0 +1,32 @@
+.container {
+	display: flex;
+}
+
+.container.equal {
+	flex: 1;
+}
+
+.container.edges {
+	padding: 0 2rem;
+}
+
+.container.column {
+	flex-direction: column;
+}
+
+.container.justify-center {
+	justify-content: center;
+}
+
+.container.align-center {
+	align-items: center;
+}
+
+.container.grow {
+	flex-grow: 1;
+}
+
+.container-wrap {
+	padding: 0 2rem;
+	width: 75rem;
+}

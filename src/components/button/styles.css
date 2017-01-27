@@ -1,0 +1,26 @@
+.button {
+	display: inline-block;
+	line-height: 2.5;
+	background: #6666FF;
+	color: white;
+	padding: 0 1.75rem;
+	font-weight: 600;
+	border-radius: 0.3em;
+	border: 2px solid transparent;
+	cursor: pointer;
+	text-decoration: none;
+	text-align: center;
+}
+
+.button.border {
+	border: 2px solid #999999;;
+}
+
+.button.transparent {
+	background: transparent;
+	color: #999999;
+}
+
+.button.shrink {
+	padding: 0 1rem;
+}

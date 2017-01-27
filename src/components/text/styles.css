@@ -1,0 +1,56 @@
+.title {
+	color: #656565;
+	font-size: 1.25rem;
+	line-height: 1.5;
+	font-weight: 600;
+}
+
+.title.center {
+	text-align: center;
+}
+
+.title.large {
+	font-size: 1.5rem;
+}
+
+.title.xl {
+	font-size: 2rem;
+}
+
+.title.bold {
+	font-weight: 700;
+}
+
+.title.heavy {
+	font-weight: 800;
+}
+
+.paragraph {
+	line-height: 1.5;
+	color: #999999;
+}
+
+.paragraph a {
+	color: #6666FF;
+	font-weight: 700;
+}
+
+.spacer {
+	flex: 0 0 1rem;
+}
+
+.spacer.large {
+	flex: 0 0 1.5rem;
+}
+
+.spacer.xl {
+	flex: 0 0 2rem;
+}
+
+.spacer.small {
+	flex: 0 0 0.5rem;
+}
+
+.spacer.xs {
+	flex: 0 0 0.25rem;
+}
