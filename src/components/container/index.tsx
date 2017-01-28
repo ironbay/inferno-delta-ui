@@ -15,7 +15,15 @@ export default class Container extends Component<any, IState> {
 		super()
 	}
 	render() {
-		return wrap('div', 'container', {}, 'column', 'justify-center', 'align-center', 'grow', 'equal')(this.props)
+		return wrap('div', 'container', {},
+			'column',
+			'justify-center',
+			'justify-between',
+			'align-center',
+			'grow',
+			'equal',
+			'hide-mobile',
+		)(this.props)
 	}
 	static Wrap = wrap(Container, 'container-wrap', {})
 

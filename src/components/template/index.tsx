@@ -1,11 +1,8 @@
-import Delta from "../../data/delta";
 import './styles.css'
 import * as createElement from 'inferno-create-element'
 import * as Component from 'inferno-component'
 
 interface IProps {
-	delta: Delta
-	history
 }
 
 interface IState {

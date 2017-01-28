@@ -7,6 +7,7 @@ import Container from '../../components/container'
 import Button from '../../components/button'
 import Header from '../../components/header'
 import Section from '../../components/section'
+import Grid from '../../components/grid'
 
 interface IProps {
 	delta: Delta
@@ -25,15 +26,15 @@ export default class ComponentPage extends Component<IProps, IState> {
 		return (
 			<Container column className='component-page'>
 				<Header>
-					<Container.Wrap align-center >
+					<Container.Wrap align-center justify-between>
 						<Title heavy>IRONBAY</Title>
-						<Container justify-center grow >
+						<Container hide-mobile justify-center grow >
 							<Button transparent shrink>Features</Button>
 							<Button transparent shrink>Pricing</Button>
 							<Button transparent shrink>Team</Button>
 							<Button transparent shrink>Blog</Button>
 						</Container>
-						<Button>Register</Button>
+						<Button to='/form'>Register</Button>
 					</Container.Wrap>
 				</Header>
 				<Container edges justify-center>
@@ -60,47 +61,69 @@ export default class ComponentPage extends Component<IProps, IState> {
 				</Container>
 				<Section white justify-center>
 					<Container.Wrap>
-						<Container column>
-							<Title heavy>Step 1</Title>
-							<Spacer small />
-							<Paragraph>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet aliquet tristique. Donec non turpis mi. Ut in mattis velit. Nulla lacinia mi eu metus vehicula gravida.
-							</Paragraph>
-						</Container>
-						<Spacer large />
-						<Container column>
-							<Title heavy>Step 2</Title>
-							<Spacer small />
-							<Paragraph>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet aliquet tristique. Donec non turpis mi. Ut in mattis velit. Nulla lacinia mi eu metus vehicula gravida.
-							</Paragraph>
-						</Container>
-						<Spacer large />
-						<Container column>
-							<Title heavy>Step 3</Title>
-							<Spacer small />
-							<Paragraph>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet aliquet tristique. Donec non turpis mi. Ut in mattis velit. Nulla lacinia mi eu metus vehicula gravida.
-							</Paragraph>
-						</Container>
+						<Grid three>
+							<Container column>
+								<Title heavy>Step 1</Title>
+								<Spacer small />
+								<Paragraph>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet aliquet tristique. Donec non turpis mi. Ut in mattis velit. Nulla lacinia mi eu metus vehicula gravida.
+								</Paragraph>
+							</Container>
+							<Container column>
+								<Title heavy>Step 1</Title>
+								<Spacer small />
+								<Paragraph>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet aliquet tristique. Donec non turpis mi. Ut in mattis velit. Nulla lacinia mi eu metus vehicula gravida.
+								</Paragraph>
+							</Container>
+							<Container column>
+								<Title heavy>Step 1</Title>
+								<Spacer small />
+								<Paragraph>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet aliquet tristique. Donec non turpis mi. Ut in mattis velit. Nulla lacinia mi eu metus vehicula gravida.
+								</Paragraph>
+							</Container>
+						</Grid>
 					</Container.Wrap>
 				</Section>
 				<Section white justify-center>
 					<Container.Wrap>
-						<Container equal justify-center >
-							<img width='275' height='275' src='https://image.flaticon.com/icons/svg/321/321805.svg' />
-						</Container>
-						<Container justify-center equal column>
-							<Title heavy>01</Title>
-							<Title large>
-								Some special <br />
-								This is also so great
-							</Title>
-							<Spacer small />
-							<Paragraph>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet aliquet tristique. Donec non turpis mi. Ut in mattis velit. Nulla lacinia mi eu metus vehicula gravida.
-							</Paragraph>
-						</Container>
+						<Grid two>
+							<Container hide-mobile justify-center grow>
+								<img width='275' height='275' src='https://image.flaticon.com/icons/svg/321/321805.svg' />
+							</Container>
+							<Container column >
+								<Title heavy>01</Title>
+								<Title large>
+									Some special <br />
+									This is also so great
+								</Title>
+								<Spacer small />
+								<Paragraph>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet aliquet tristique. Donec non turpis mi. Ut in mattis velit. Nulla lacinia mi eu metus vehicula gravida.
+								</Paragraph>
+							</Container>
+						</Grid>
+					</Container.Wrap>
+				</Section>
+				<Section white justify-center>
+					<Container.Wrap>
+						<Grid two>
+							<Container column >
+								<Title heavy>02</Title>
+								<Title large>
+									Some special <br />
+									This is also so great
+								</Title>
+								<Spacer small />
+								<Paragraph>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet aliquet tristique. Donec non turpis mi. Ut in mattis velit. Nulla lacinia mi eu metus vehicula gravida.
+								</Paragraph>
+							</Container>
+							<Container hide-mobile justify-center grow>
+								<img width='275' height='275' src='https://image.flaticon.com/icons/svg/321/321773.svg' />
+							</Container>
+						</Grid>
 					</Container.Wrap>
 				</Section>
 			</Container>

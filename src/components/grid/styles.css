@@ -1,0 +1,28 @@
+.grid {
+	flex-wrap: wrap;
+	margin-bottom: -1rem;
+}
+.grid-item {
+	margin-bottom: 1rem;
+	flex: 0 0 100%;
+}
+
+@media screen and (min-width: 600px) {
+	.grid-item {
+		flex: 0 0 calc(100% / 2 - 0.5rem);
+	}
+
+	.grid.two .grid-item {
+		flex: 0 0 calc(100% / 2 - 0.5rem);
+	}
+
+	.grid.three .grid-item {
+		flex: 0 0 calc(100% / 3 - 0.6666666666rem);
+	}
+}
+
+@media screen and (min-width: 720px) {
+	.grid-item {
+		flex: 0 0 calc(100% / 3 - 0.6666666666rem);
+	}
+}
