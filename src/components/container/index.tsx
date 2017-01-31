@@ -19,12 +19,17 @@ export default class Container extends Component<any, IState> {
 			'column',
 			'justify-center',
 			'justify-between',
+			'justify-end',
 			'align-center',
 			'grow',
 			'equal',
 			'hide-mobile',
+			'responsive',
+			'break',
 		)(this.props)
 	}
 	static Wrap = wrap(Container, 'container-wrap', {})
 
 }
+
+export const Card = wrap(Container, 'card', {})

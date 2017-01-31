@@ -5,4 +5,4 @@ import { Link } from 'inferno-router'
 import wrap from '../wrap'
 import Container from '../container'
 
-export default wrap(Link, 'button', {}, 'border', 'transparent', 'shrink')
+export default wrap(Link, 'button', {}, 'border', 'transparent', 'shrink', 'small')

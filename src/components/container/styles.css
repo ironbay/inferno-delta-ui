@@ -26,6 +26,10 @@
 	justify-content: space-between;
 }
 
+.container.justify-end {
+	justify-content: flex-end;
+}
+
 .container.align-center {
 	align-items: center;
 }
@@ -40,8 +44,32 @@
 	width: 100%;
 }
 
+.container.break {
+	max-width: 48rem;
+}
+
+.card {
+	padding: 1.25rem;
+	border: 2px solid #e2e2e2;
+    border-radius: 0.3rem;
+	transition: 250ms all;
+	flex: 0 0 100%;
+}
+
+.container.responsive {
+	flex-direction: column;
+}
+
+.card:hover {
+	/*border-color: #6666FF;*/
+}
+
 @media screen and (min-width: 600px) {
 	.container.hide-mobile {
 		display: flex;
+	}
+
+	.container.responsive {
+		flex-direction: row;
 	}
 }

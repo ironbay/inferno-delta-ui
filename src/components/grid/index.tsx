@@ -33,6 +33,4 @@ export default class Grid extends Component<any, IState> {
 
 }
 
-const render = wrap(Container, 'grid', {
-	'justify-between': true,
-}, 'grid', 'two', 'three')
+const render = wrap(Container, 'grid', {}, 'grid', 'two', 'three')

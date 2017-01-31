@@ -1,0 +1,10 @@
+.image {
+	width: 10rem;
+	height: 10rem;
+	object-fit: cover;
+	object-position: center;
+}
+
+.image.circle {
+	border-radius: 100rem;
+}

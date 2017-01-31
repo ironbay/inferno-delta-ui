@@ -10,4 +10,8 @@
 	.section {
 		padding: 4rem 0;
 	}
+
+	.section.small {
+		padding: 2rem 0;
+	}
 }

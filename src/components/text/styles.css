@@ -5,6 +5,10 @@
 	font-weight: 600;
 }
 
+.title.capitalize {
+	text-transform: capitalize;
+}
+
 .title.center {
 	text-align: center;
 }
@@ -29,10 +33,30 @@
 	line-height: 1.5;
 	color: #999999;
 }
+.paragraph.large {
+	font-size: 1.25rem;
+}
 
 .paragraph a {
 	color: #6666FF;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.paragraph.bold {
 	font-weight: 700;
+}
+
+.paragraph.highlight {
+	color: #6666FF;
+}
+
+.paragraph.space {
+	line-height: 2;
+}
+
+.paragraph.capitalize {
+	text-transform: capitalize;
 }
 
 .spacer {

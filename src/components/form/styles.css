@@ -7,16 +7,19 @@
 	line-height: 1.5em;
 	padding: 0.25em 0;
 	padding-left: 0.75em;
-	border-left: 3px solid;
+	border-left: 3px solid #e2e2e2;
     color: #999999;
 	transition: 250ms all;
 	font-weight: 700;
 	font-family: 'Nunito';
 	margin-bottom: 1.75rem;
-
 }
 
 .form-input:focus {
 	color: #6666FF;
 	border-color: #6666FF;
+}
+
+.form-select {
+	padding-right: 2rem;
 }
