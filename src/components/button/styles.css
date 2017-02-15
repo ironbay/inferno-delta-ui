@@ -1,7 +1,7 @@
 .button {
 	display: inline-block;
 	line-height: 2.5;
-	background: #6666FF;
+	background: #1e83f0;
 	color: white;
 	padding: 0 1.5em;
 	font-weight: 600;
@@ -19,14 +19,24 @@
 }
 
 .button.border {
-	border: 2px solid #999999;;
+	border: 2px solid white;;
 }
 
 .button.transparent {
 	background: transparent;
-	color: #999999;
+	color: white;
 }
 
 .button.shrink {
 	padding: 0 1rem;
+}
+
+.button.dark {
+	color: #656565;
+	border-color: #656565;
+}
+
+.button.white {
+	color: white;
+	border-color: white;
 }

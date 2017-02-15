@@ -1,7 +1,5 @@
 import './styles.css'
-import * as createElement from 'inferno-create-element'
-import * as Component from 'inferno-component'
+import createElement from 'inferno-create-element'
 import wrap from '../wrap'
-import Container from '../container'
 
 export default wrap('img', 'image', {}, 'circle')

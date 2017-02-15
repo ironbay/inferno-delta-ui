@@ -1,35 +1,38 @@
 import './styles.css'
-import * as createElement from 'inferno-create-element'
-import * as Component from 'inferno-component'
+import createElement from 'inferno-create-element'
 import wrap from '../wrap'
 
-interface IProps {
+export const Container = wrap('div', 'container', {},
+	'column',
+	'justify-center',
+	'justify-between',
+	'justify-end',
+	'align-center',
+	'grow',
+	'equal',
+	'hide-mobile',
+	'responsive',
+	'break',
+	'fill',
+	'gray',
+	'padding',
+	'border',
+)
+
+export const Wrap = wrap(Container, 'container-wrap', {})
+
+export const Card = wrap(Container, 'card', {}, 'shadow')
+
+export const Row = wrap(Container, 'row', {})
+
+export const Section = wrap(Container, 'section', {}, 'large', 'xl', 'small')
+
+export function Banner(props) {
+	return (
+		<Container justify-center className='banner'>
+			<Wrap>
+				{props.children}
+			</Wrap>
+		</Container>
+	)
 }
-
-interface IState {
-
-}
-
-export default class Container extends Component<any, IState> {
-	constructor() {
-		super()
-	}
-	render() {
-		return wrap('div', 'container', {},
-			'column',
-			'justify-center',
-			'justify-between',
-			'justify-end',
-			'align-center',
-			'grow',
-			'equal',
-			'hide-mobile',
-			'responsive',
-			'break',
-		)(this.props)
-	}
-	static Wrap = wrap(Container, 'container-wrap', {})
-
-}
-
-export const Card = wrap(Container, 'card', {})

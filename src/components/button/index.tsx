@@ -1,8 +1,6 @@
 import './styles.css'
-import * as createElement from 'inferno-create-element'
-import * as Component from 'inferno-component'
+import createElement from 'inferno-create-element'
 import { Link } from 'inferno-router'
 import wrap from '../wrap'
-import Container from '../container'
 
-export default wrap(Link, 'button', {}, 'border', 'transparent', 'shrink', 'small')
+export default wrap(Link, 'button', {}, 'border', 'transparent', 'shrink', 'small', 'dark', 'white')

@@ -1,12 +1,22 @@
 .title {
 	color: #656565;
+	color: #647585;
 	font-size: 1.25rem;
 	line-height: 1.5;
 	font-weight: 600;
 }
 
+.title.white {
+	color: white;
+}
+
 .title.capitalize {
 	text-transform: capitalize;
+}
+
+.title.uppercase {
+	text-transform: uppercase;
+	letter-spacing: 0.025em;
 }
 
 .title.center {
@@ -15,6 +25,10 @@
 
 .title.large {
 	font-size: 1.5rem;
+}
+
+.title.small {
+	font-size: 1rem;
 }
 
 .title.xl {
@@ -32,13 +46,15 @@
 .paragraph {
 	line-height: 1.5;
 	color: #999999;
+	color: #647585;
 }
 .paragraph.large {
 	font-size: 1.25rem;
 }
 
 .paragraph a {
-	color: #6666FF;
+	cursor: pointer;
+	color: #1e83f0;
 	font-weight: 600;
 	text-decoration: none;
 }
@@ -48,7 +64,7 @@
 }
 
 .paragraph.highlight {
-	color: #6666FF;
+	color: #1e83f0;
 }
 
 .paragraph.space {
@@ -57,6 +73,10 @@
 
 .paragraph.capitalize {
 	text-transform: capitalize;
+}
+
+.paragraph.white {
+	color: white;
 }
 
 .spacer {

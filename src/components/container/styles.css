@@ -1,5 +1,14 @@
 .container {
 	display: flex;
+	position: relative;
+}
+
+.container.fill {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
 }
 
 .container.hide-mobile {
@@ -38,6 +47,14 @@
 	flex-grow: 1;
 }
 
+.container.padding {
+	padding: 1.5rem;
+}
+
+.container.border {
+	border: 1px solid rgba(204,204,204,.41);
+}
+
 .container-wrap {
 	padding: 0 2rem;
 	max-width: 75rem;
@@ -48,8 +65,12 @@
 	max-width: 48rem;
 }
 
+.container.gray {
+	background: #fafafa;
+}
+
 .card {
-	padding: 1.25rem;
+	padding: 1.75rem;
 	border: 2px solid #e2e2e2;
     border-radius: 0.3rem;
 	transition: 250ms all;
@@ -62,6 +83,36 @@
 
 .card:hover {
 	/*border-color: #6666FF;*/
+}
+
+.card.shadow {
+	border-radius: 0;
+	border: 0;
+	background: white;
+}
+
+.section {
+	padding: 4rem 0;
+}
+
+.section.large {
+	padding: 6rem 0;
+}
+
+.section.xl {
+	padding: 16rem 0;
+}
+
+.section.small {
+	padding: 3rem 0;
+}
+
+.row {
+	margin-bottom: 2rem;
+}
+
+.row:last-child {
+	margin-bottom: 0;
 }
 
 @media screen and (min-width: 600px) {

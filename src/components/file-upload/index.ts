@@ -11,7 +11,7 @@ export default class FileUpload {
 			document.body.removeChild(this._input)
 			const [prefix, data] = reader.result.split(',')
 			const mime: string = prefix.match(/:(.+);/)[1]
-			const [category, _] = mime.split('/')
+			// const [category, _] = mime.split('/')
 			await delta.send('upload.start', {})
 			for (let part of data.match(/.{1,10000}/g)) {
 				await delta.send('upload.partial', {

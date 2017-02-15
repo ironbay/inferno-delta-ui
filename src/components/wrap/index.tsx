@@ -1,4 +1,4 @@
-import * as createElement from 'inferno-create-element'
+import createElement from 'inferno-create-element'
 import * as cs from 'classnames'
 
 
