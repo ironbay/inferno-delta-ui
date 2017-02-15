@@ -1,6 +1,7 @@
 import './styles.css'
 import createElement from 'inferno-create-element'
 import wrap from '../wrap'
+import Component from 'inferno-component'
 
 export const Container = wrap('div', 'container', {},
 	'column',
