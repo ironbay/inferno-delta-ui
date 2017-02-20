@@ -1,12 +1,10 @@
 import Delta from "../../data/delta";
 import './styles.css'
-import * as createElement from 'inferno-create-element'
-import * as Component from 'inferno-component'
+import createElement from 'inferno-create-element'
+import Component from 'inferno-component'
 import { Title, Spacer, Paragraph } from '../../components/text'
-import Container from '../../components/container'
+import { Container, Wrap, Section } from '../../components/container'
 import Button from '../../components/button'
-import Header from '../../components/header'
-import Section from '../../components/section'
 import Grid from '../../components/grid'
 
 interface IProps {
@@ -25,8 +23,8 @@ export default class ComponentPage extends Component<IProps, IState> {
 	render() {
 		return (
 			<Container column className='component-page'>
-				<Header>
-					<Container.Wrap align-center justify-between>
+				<Container justify-center style={{height: '5rem'}}>
+					<Wrap align-center justify-between>
 						<Title heavy>IRONBAY</Title>
 						<Container hide-mobile justify-center grow >
 							<Button transparent shrink>Features</Button>
@@ -34,11 +32,11 @@ export default class ComponentPage extends Component<IProps, IState> {
 							<Button transparent shrink>Team</Button>
 							<Button transparent shrink>Blog</Button>
 						</Container>
-						<Button to='/form'>Register</Button>
-					</Container.Wrap>
-				</Header>
-				<Container edges justify-center>
-						<Container.Wrap column justify-center>
+						<Button to='/form' small>Register</Button>
+					</Wrap>
+				</Container>
+				<Container justify-center>
+						<Wrap column justify-center>
 							<Spacer xl />
 							<Spacer xl />
 							<Spacer xl />
@@ -51,16 +49,16 @@ export default class ComponentPage extends Component<IProps, IState> {
 							<Container>
 								<Button>Thing 1</Button>
 								<Spacer />
-								<Button transparent border>Thing 2</Button>
+								<Button transparent border dark>Thing 2</Button>
 							</Container>
 							<Spacer xl />
 							<Spacer xl />
 							<Spacer xl />
 							<Spacer xl />
-						</Container.Wrap>
+						</Wrap>
 				</Container>
 				<Section white justify-center>
-					<Container.Wrap>
+					<Wrap>
 						<Grid three>
 							<Container column>
 								<Title heavy>Step 1</Title>
@@ -84,10 +82,10 @@ export default class ComponentPage extends Component<IProps, IState> {
 								</Paragraph>
 							</Container>
 						</Grid>
-					</Container.Wrap>
+					</Wrap>
 				</Section>
 				<Section white justify-center>
-					<Container.Wrap>
+					<Wrap>
 						<Grid two>
 							<Container hide-mobile justify-center grow>
 								<img width='275' height='275' src='https://image.flaticon.com/icons/svg/321/321805.svg' />
@@ -104,10 +102,10 @@ export default class ComponentPage extends Component<IProps, IState> {
 								</Paragraph>
 							</Container>
 						</Grid>
-					</Container.Wrap>
+					</Wrap>
 				</Section>
 				<Section white justify-center>
-					<Container.Wrap>
+					<Wrap>
 						<Grid two>
 							<Container column >
 								<Title heavy>02</Title>
@@ -124,7 +122,7 @@ export default class ComponentPage extends Component<IProps, IState> {
 								<img width='275' height='275' src='https://image.flaticon.com/icons/svg/321/321773.svg' />
 							</Container>
 						</Grid>
-					</Container.Wrap>
+					</Wrap>
 				</Section>
 			</Container>
 		)

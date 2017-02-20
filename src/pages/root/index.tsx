@@ -8,7 +8,7 @@ import Delta from '../../data/delta'
 import createElement from 'inferno-create-element'
 import Component from 'inferno-component'
 import Inferno from 'inferno'
-import Container from '../../components/container'
+import { Container } from '../../components/container'
 
 interface IRootProps {
 	children: any
